@@ -437,6 +437,7 @@
         <module>distribution</module>
         <module>console</module>
         <module>cmdb</module>
+        <module>fixbugs</module>
     </modules>
 
     <!-- 所有的子项目默认依赖 -->
@@ -518,7 +519,11 @@
                 <artifactId>nacos-example</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
+	        <dependency>
+	            <groupId>${project.groupId}</groupId>
+	            <artifactId>nacos-fixbugs</artifactId>
+	            <version>${project.version}</version>
+	        </dependency>
             <!-- Alibaba libs-->
             <dependency>
                 <groupId>com.alibaba</groupId>
